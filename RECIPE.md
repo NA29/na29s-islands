@@ -1,4 +1,4 @@
-# Herdr Rice — Rosé Pine Islands
+# NA29 Islands — Rosé Pine for Herdr
 
 A macOS terminal and coding-agent desktop with a numbered workspace sidebar,
 separate rounded islands for tabs, panes and status, a vim-style Go to menu,
@@ -6,7 +6,7 @@ and an expandable prompt/reply activity log. Appearance, keys and integrations
 are controlled from one personal Settings panel. The preview is a real crop
 of the prefix menu; a clean full-layout preview is pending.
 
-![Herdr Rice](preview.png)
+![NA29 Islands](preview.png)
 
 ## What you see
 
@@ -129,7 +129,7 @@ System metrics use `ps`, `vm_stat`, `sysctl`, `pmset`; Wispr uses read-only SQLi
 
 `rice.json` is flat settings data loaded into shared `rice`. Both `my-keys` and
 `my-settings` define matching DEFAULTS. Settings changes shared state;
-`my-keys` alone writes rice, relevant keys and the `my-sleek` look. Herdr's
+`my-keys` alone writes rice, relevant keys and the `na29-islands` look. Herdr's
 preferences remain in `settings.json`. Use `readTextFile`/`writeTextFile` with
 expected prior contents, and `appHome()` for Settings writes.
 
@@ -171,7 +171,7 @@ ship here; choose your own artwork and use Herdr's default sounds.
 1. Every copied mod passes `HERDR_APP_HOME="$PWD" herdr-app check "$PWD/mods/<name>"`;
    remove generated `gpui-kit.d.ts` and `jsconfig.json` afterwards.
 2. Installing into a detached config preserves a complete backup, copies only
-   the payload, and `layout.switch --name my-sleek` shows the islands. Fallback
+   the payload, and `layout.switch --name na29-islands` shows the islands. Fallback
    layouts can also be selected without missing personal mods.
 3. Settings changes opacity independently for islands/cards/panes, dimming stays
    behind them, menus stay opaque, and values persist after restarting Herdr.

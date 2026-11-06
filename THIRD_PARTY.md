@@ -13,7 +13,9 @@
 Source snapshot: the personal dotfiles `stow-layout` branch, commit `3812250`.
 Publication changes: gradient defaults in the layout, rice settings and both
 Settings default maps; generic wallpaper folder; default notification sounds;
-one generic example substituted in a source comment. The OpenCode integration
+one generic example substituted in a source comment. The original main layout
+is published as `layouts/na29-islands.json` (NA29 Islands); the settings writer
+and installation instructions use that name. The OpenCode integration
 is copied from the same dotfiles snapshot.
 
 ## Licenses

@@ -1,10 +1,10 @@
-# Herdr Rice
+# NA29 Islands
 
 Rosé Pine islands for terminals and coding agents. A quieter desktop with
 numbered workspaces, vim-style navigation, a searchable activity log, and a
 status bar that keeps the useful details close.
 
-![Herdr Rice prefix menu](docs/hero.png)
+![NA29 Islands prefix menu](docs/hero.png)
 
 *Privacy-safe preview: the actual Ctrl+A menu. A full-window hero is pending a
 clean demo capture; see [screenshot retakes](docs/SCREENSHOTS.md).*
@@ -15,7 +15,7 @@ clean demo capture; see [screenshot retakes](docs/SCREENSHOTS.md).*
 
 ![Island opacity controls](docs/transparency.png)
 
-`my-sleek` separates the sidebar, tabs, terminal panes, and status bar into
+`na29-islands` separates the sidebar, tabs, terminal panes, and status bar into
 rounded islands, with 5px gaps and 10px corners. The screenshot shows their
 controls; a full layout view is on the retake list.
 
@@ -161,11 +161,11 @@ cp -pR licenses "$HOME/.config/herdr-app/"
 Open Herdr, then activate the main layout:
 
 ```sh
-herdr-app do layout.switch --name my-sleek
+herdr-app do layout.switch --name na29-islands
 ```
 
 `my-combined` and `my-main` are included as older fallback layouts. They share
-some settings and key actions, but the appearance writer targets `my-sleek`.
+some settings and key actions, but the appearance writer targets `na29-islands`.
 
 ### Optional activity hooks
 
@@ -290,7 +290,7 @@ Start with **Settings**. The shipped `rice.json` uses these flat keys:
 | `keys.namedSpaces`, `.settingsPanel` | Name new spaces; use personal Settings |
 
 `my-keys` loads `rice.json` at start, then is the single writer for shared rice
-changes, the look in `layouts/my-sleek.json`, and relevant bindings in `keys.json`.
+changes, the look in `layouts/na29-islands.json`, and relevant bindings in `keys.json`.
 Prefer Settings for look changes: editing `rice.json` alone while running is not
 a live update, and restarting loads values without reapplying the whole layout.
 For manual edits, quit Herdr, update the matching layout/key fields too, and

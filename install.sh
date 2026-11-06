@@ -54,5 +54,5 @@ for rel in files:
 (backup / 'installed-files.txt').write_text('\n'.join(map(str, files)) + '\n')
 print(f'Installed {len(files)} files into {target}')
 print(f'Backup and install manifest: {backup}')
-print('Open Herdr, then: herdr-app do layout.switch --name my-sleek')
+print('Open Herdr, then: herdr-app do layout.switch --name na29-islands')
 PY
