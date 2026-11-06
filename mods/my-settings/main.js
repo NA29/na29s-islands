@@ -1,3 +1,5 @@
+// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal settings panel (Cmd+, · Ctrl+A s · the sidebar's Settings button).
 // Everything personal in one place: look, wallpaper, sidebar, bars, terminal, sounds, keys.
 //

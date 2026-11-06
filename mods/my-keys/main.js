@@ -1,3 +1,5 @@
+// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal key actions that need more than one app command.
 //   new-space   ask for the name first, then make the space (on the focused space's machine)
 //   go-left|go-down|go-up|go-right

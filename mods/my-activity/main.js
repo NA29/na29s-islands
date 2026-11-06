@@ -1,3 +1,5 @@
+// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal: activity feed.
 //   Sidebar (this block): the latest events, newest first ("14:02 ● Sigsig recipe request
 //   finished · 4m"); "all ›" opens the log. Folds to the latest event.

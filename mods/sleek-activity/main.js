@@ -1,3 +1,5 @@
+// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal: activity, one entry per RUN (a request from start to finish), not per state change.
 //   Sidebar (this block): the latest runs ("21:01 ● Review example change finished 3s"); folds to the latest.
 //   Log (the same mod as a frameless dialog, props().log): today's summary (runs, agent time, how often

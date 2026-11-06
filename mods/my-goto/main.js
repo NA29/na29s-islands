@@ -1,3 +1,5 @@
+// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal Go to screen (replaces the shipped picker in my-main): cmd-p, the sidebar's
 // search icon, and Ctrl+A g.
 //   Needs you   tabs whose agents are blocked or finished, first

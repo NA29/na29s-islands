@@ -10,7 +10,8 @@ import tempfile
 from pathlib import Path
 
 source, target = map(lambda s: Path(s).absolute(), sys.argv[1:])
-roots = ['layouts', 'mods', 'themes', 'keys.json', 'rice.json', 'settings.json']
+roots = ['layouts', 'mods', 'themes', 'keys.json', 'rice.json', 'settings.json',
+         'LICENSE', 'NOTICE', 'THIRD_PARTY.md', 'licenses']
 files = []
 for name in roots:
     path = source / name
@@ -21,7 +22,7 @@ for name in roots:
         if item.is_symlink():
             raise SystemExit(f'Refusing source symlink: {rel}')
         if item.is_file():
-            if item.suffix not in ('.json', '.js', '.py', '.svg', '.applescript'):
+            if item.name not in ('LICENSE', 'NOTICE') and item.suffix not in ('.json', '.js', '.py', '.svg', '.applescript', '.md', '.txt'):
                 raise SystemExit(f'Unexpected payload file: {rel}')
             if item.suffix == '.json':
                 json.loads(item.read_text())

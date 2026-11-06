@@ -134,7 +134,7 @@ cd /path/to/herdr-rice
 
 The installer first snapshots the entire existing `~/.config/herdr-app` into a
 unique sibling `herdr-app-backup-*` directory. It then copies only `layouts/`,
-`mods/`, `themes/`, `keys.json`, `rice.json`, and `settings.json`; it never deletes
+`mods/`, `themes/`, `keys.json`, `rice.json`, `settings.json`, and license notices; it never deletes
 files and does not install integrations, docs, or previews. The backup contains
 your private runtime state, so keep it private.
 
@@ -154,6 +154,8 @@ fi
 mkdir -p "$HOME/.config/herdr-app"
 cp -pR layouts mods themes "$HOME/.config/herdr-app/"
 cp -p keys.json rice.json settings.json "$HOME/.config/herdr-app/"
+cp -p LICENSE NOTICE THIRD_PARTY.md "$HOME/.config/herdr-app/"
+cp -pR licenses "$HOME/.config/herdr-app/"
 ```
 
 Open Herdr, then activate the main layout:
@@ -318,11 +320,15 @@ and are not removed automatically.
 ## Credits and sharing
 
 Built on [Herdr](https://herdr.dev), with [Rosé Pine](https://rosepinetheme.com)
-and [Geist](https://vercel.com/font). See [provenance and licensing review](THIRD_PARTY.md)
+and [Geist](https://vercel.com/font). Licensed under [Apache-2.0](LICENSE), with
+upstream notices retained. See [credits and third-party licenses](THIRD_PARTY.md)
 and the [build recipe](RECIPE.md).
 
 When publishing this repo yourself, add the GitHub topic **`herdr-layout`**.
 Herdr's guide specifies a root `RECIPE.md`, `preview.png`, and the installable
 folder structure; its directory normally picks up tagged public repositories
-within an hour. Replace the temporary control preview with the clean full-layout
+within an hour. No separate signup is required; community pictures are screened
+before appearing, according to the [gallery's sharing instructions](https://herdr.dev/gallery/#share).
+On GitHub, open the repository's **About → gear icon → Topics**, add `herdr-layout`,
+and save. Replace the temporary control preview with the clean full-layout
 shot before requesting a listing. No GitHub repository is created by this project.
