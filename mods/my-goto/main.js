@@ -1,5 +1,3 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
-// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal Go to screen (replaces the shipped picker in my-main): cmd-p, the sidebar's
 // search icon, and Ctrl+A g.
 //   Needs you   tabs whose agents are blocked or finished, first
@@ -15,11 +13,11 @@ import { View, div, svg, image } from "gpui-kit";
 import { v_flex, h_flex, InputState, Input } from "gpui-base";
 import { agents, spaces, panes, run, hc, theme, keys, props, closeOverlay, openOverlay, shared, setShared, home } from "herdr";
 
-// Personal: a tab's label. A name you gave it wins; else what's in it: the agent's session
-// name (from its terminal title), else the program running ("nvim"), else the shell's
-// folder. Herdr's own name for an unnamed tab is just its number.
+// Personal: a tab's label, the same name the sidebar shows. An agent's session name (from
+// its terminal title) wins; else a name you gave the tab; else what's in it: a program's
+// telling title or name ("nvim"), else the shell's folder. Herdr's own name for an unnamed
+// tab is just its number.
 function tabLabel(tab, ps, homeDir) {
-  if (tab.named) return tab.name;
   const mine = ps.filter((p) => p.tab === tab.id && p.terminal);
   const lead = mine.find((p) => p.program?.agent) ?? mine.find((p) => p.focused) ?? mine[0];
   if (!lead) return tab.name;
@@ -32,9 +30,12 @@ function tabLabel(tab, ps, homeDir) {
     const said = [lead.program?.name, lead.program?.key, lead.app].filter(Boolean).map((x) => x.toLowerCase());
     const generic = !raw || said.includes(low) || low === base(lead.cwd).toLowerCase() || /^[~/]/.test(raw) || raw.includes("@")
       || /^(claude( code)?|codex|open ?code|shell)$/.test(low) || /^new session\b/.test(low);
+    if (!generic && lead.program?.agent) return raw;
+    if (tab.named) return tab.name;
     if (!generic) return raw;
     if (lead.program?.name && lead.program.name !== "program") return lead.program.name;
   }
+  if (tab.named) return tab.name;
   return base(lead.cwd) || tab.name;
 }
 
