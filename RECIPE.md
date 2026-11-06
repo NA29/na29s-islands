@@ -30,7 +30,7 @@ semibold, agent titles regular. Cards and groups use soft fills and a roughly
 adapt to their contents.
 
 The work area has a 40px tab strip, flexible terminal panes (30px always-visible
-headers), and a 32px status bar. Terminal padding is `[14, 12]`, pane gap 8px.
+headers), and a 32px status bar. Terminal padding is `[14, 12]`, pane gap 5px (the same as the island gap; Settings → Gaps sets both).
 A hidden Files/Changes stack can open to the right, initially 368px wide
 (280–900px). The status bar groups CPU, memory, battery, music with transport
 controls, numeric Wispr Flow statistics, agent status and date/time.
