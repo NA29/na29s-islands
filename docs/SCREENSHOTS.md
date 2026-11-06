@@ -8,7 +8,7 @@ The full-window shots use a demo scene: workspaces `rice`, `aurora` and
 `dotfiles`, sample tabs, `fastfetch`/`cbonsai`/`btop` output, and three harmless
 sample agent prompts about a tiny demo file (`forecast.js`). The prompts,
 replies and agent titles in the images are real output from those sample runs;
-nothing was edited afterwards. The wallpaper is Hatsune Miku fan art chosen by
+nothing was edited afterwards. The wallpaper is third-party anime art chosen by
 the author; it is **not** distributed here (see [ASSETS.md](ASSETS.md)).
 
 | File | What is visible |

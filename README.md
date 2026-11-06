@@ -6,7 +6,7 @@ status bar that keeps the useful details close.
 
 ![NA29 Islands: numbered workspaces, agents, activity and usage in the sidebar; fastfetch, cbonsai and btop in see-through panes](docs/hero.png)
 
-*Wallpaper in the screenshots: Hatsune Miku fan art, not included in this repo.
+*Wallpaper in the screenshots: third-party anime art, not included in this repo.
 Bring your own (see [wallpapers](docs/ASSETS.md)); the default is a gradient.*
 
 ## A tour
