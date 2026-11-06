@@ -15,7 +15,9 @@ Bring your own (see [wallpapers](docs/ASSETS.md)); the default is a gradient.*
 
 `na29-islands` separates the sidebar, tabs, terminal panes, and status bar into
 rounded islands, with 5px gaps and 10px corners, floating over your wallpaper
-(see the screenshot above).
+(see the screenshot above). Files and Changes in the top bar open a fourth island on the
+right: a file tree with git marks and a diff/commit panel, in the same cards
+and type as the sidebar.
 
 ### Wallpaper, dimming, and three transparency layers
 

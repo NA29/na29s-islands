@@ -99,7 +99,7 @@ root (row: gradient, no system titlebar, traffic_lights [18,20])
         ├── work-body (row)
         │   ├── main → active tab; pane header sleek-pane
         │   └── panel (hidden column)
-        │       └── panel-body (stack: files | changes)
+        │       └── panel-body (stack: sleek-files | sleek-changes)
         ├── status → sleek-status (32px)
         └── my-keys (0px, always alive)
 ```
