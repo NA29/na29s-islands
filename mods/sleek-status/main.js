@@ -1,4 +1,4 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Modified for NA29 Islands by NA29: interface and behavior.
 // Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal status bar, pure rice (the sidebar and tab bar already say where you are):
 //   ⌗ ▮▯▯▯▯▯▯▯▯▯ 7%  ▤ ▮▮▮▮▮▮▮▯▯▯ 76%  [███  ]▸ 73% ⚡   ⟳ 2  ! 1  thu 05 nov  [20:42]

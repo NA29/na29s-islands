@@ -1,24 +1,24 @@
-# NA29 Islands — Rosé Pine for Herdr
+# NA29 Islands Rice for Herdr
 
 A macOS terminal and coding-agent desktop with a numbered workspace sidebar,
 separate rounded islands for tabs, panes and status, a vim-style Go to menu,
 and an expandable prompt/reply activity log. Appearance, keys and integrations
-are controlled from one personal Settings panel. The preview is a real frame
-over a user-supplied wallpaper (not included; the default is a gradient).
+are controlled from one Settings panel, with 15 dark themes to choose from. The
+preview uses a wallpaper that isn't included; the default is a gradient.
 
-![NA29 Islands](preview.png)
+![NA29 Islands Rice for Herdr](preview.png)
 
 ## What you see
 
 From left to right, a 268px sidebar and a flexible work area sit over a gradient
 (`#342d40` → `#162a37`, 145°), darkened by a 20% black layer. The outer padding
 and horizontal gap are 5px. The sidebar, tab strip, status bar and terminal
-frames have 10px corners and 1px theme borders. Base chrome is `#16141f`, card
-and pane color `#191724`, foreground `#e0def4`, muted `#aaa6c3`, dim `#8a86a3`;
-the layout accent is `#eb6f92` over a Rosé Pine theme.
+frames have 10px corners and 1px theme borders. Islands take the active theme's
+chrome color and panes its background; with the default Rosé Pine that is chrome
+`#16141f`, panes `#191724`, foreground `#e0def4`, and the shipped accent `#eb6f92`.
 
 Words use Geist, numbers/keycaps use Geist Mono, and terminals inherit Herdr's
-JetBrains Mono. The personal app zoom is 1.1. Accent indicates selection and
+JetBrains Mono. App zoom is 1.1. Accent indicates selection and
 focus rather than decoration. Active tabs alone have a filled pill; other tabs
 are bare until hover. There are no accent underlines or letter tiles.
 
@@ -112,7 +112,7 @@ receives the command/arguments to run after naming. The fallback layouts use
 `my-chrome`, `my-spaces`, `my-agents`, `my-workspaces`, `my-tabs`, `my-pane`,
 `my-status`, `my-activity`, `my-usage` and the same `my-keys` controller.
 
-Use Herdr's shipped `files`, `changes`, `new-menu`, `machine-add`, prompt/menu
+Use Herdr's shipped `new-menu`, `machine-add`, prompt/menu
 helpers, `workspace-chrome` SVGs, `icons/` and brand image. These are supplied
 by Herdr and are not copied into the recipe package. Code uses `View`, native
 builders, `InputState`, `SliderState`, focus handles, timers for polling and
@@ -161,17 +161,14 @@ ship here; choose your own artwork and use Herdr's default sounds.
   The supplied OpenCode 2.x path has no prompt/reply recorder. No context-window
   bars are implemented for Codex/OpenCode.
 - Shared run history and cache JSONL contain private text. Never publish them.
-  Check existing overlays before screenshot automation; only close ones you own.
-- The screenshot values reflect a live customization; package defaults are the
-  documented snapshot.
 
 ## Done when
 
 1. Every copied mod passes `HERDR_APP_HOME="$PWD" herdr-app check "$PWD/mods/<name>"`;
    remove generated `gpui-kit.d.ts` and `jsconfig.json` afterwards.
 2. Installing into a detached config preserves a complete backup, copies only
-   the payload, and `layout.switch --name na29-islands` shows the islands. Fallback
-   layouts can also be selected without missing personal mods.
+   the payload, and `layout.switch --name na29-islands` shows the islands. The
+   alternative layouts can also be selected without missing mods.
 3. Settings changes opacity independently for islands/cards/panes, dimming stays
    behind them, menus stay opaque, and values persist after restarting Herdr.
 4. Go to switches between NORMAL and INSERT, opens a selected tab and closes on
@@ -182,5 +179,4 @@ ship here; choose your own artwork and use Herdr's default sounds.
    produce an understandable empty/unknown state.
 6. CPU/memory display, battery appears when present, media works when authorized,
    Wispr shows numbers only, and usage windows reflect real local snapshots.
-7. Public images show no personal names, paths or conversations; the listing
-   has a clean full-layout preview, this recipe and topic `herdr-layout`.
+7. Choosing a theme in Settings recolors terminals, islands, panes and menus.

@@ -1,4 +1,4 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Modified for NA29 Islands by NA29: interface and behavior.
 // Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal (my-workspaces): the Spaces list and the agents list in one. Each workspace
 // is a btop/lazygit-style box: a flat 1px frame (neutral, or the workspace's color when

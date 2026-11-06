@@ -1,3 +1,5 @@
+// Modified for NA29 Islands by NA29: interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 import { View, div } from "gpui-kit";
 import { v_flex, h_flex, InputState, Input, Scrollbar, v_virtual_list } from "gpui-base";
 import { spaces, panes, focused, exec, readTextFile, watchFolder, theme, settings, shared } from "herdr";

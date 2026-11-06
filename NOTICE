@@ -1,4 +1,4 @@
-NA29 Islands (Herdr Rice)
+NA29 Islands
 Copyright 2026 NA29
 
 Licensed under the Apache License, Version 2.0. See LICENSE.
@@ -8,8 +8,9 @@ Includes modified layout and mod code from Herdr and herdr-layout-examples
 https://github.com/herdrdev/herdr-app
 https://github.com/herdrdev/herdr-layout-examples
 
-Personal changes include the islands layout, workspace presentation, navigation,
-settings system, activity views, status/usage panels and prefix-menu behavior.
+Changes include the islands layout, workspace presentation, navigation, settings
+system, themes, activity views, files/changes panel, status/usage panels and
+prefix-menu behavior.
 Layout cloned_from metadata and mod source comments retain provenance.
 
 Included Lucide/Feather icons retain their ISC/MIT terms:

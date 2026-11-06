@@ -1,3 +1,5 @@
+// Modified for NA29 Islands by NA29: interface and behavior.
+// Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // A lazy file browser for the focused pane's folder, with bounded read-only previews.
 // Personal (cloned from Herdr's `files`): restyled like the sidebar. The island (layout block
 // "panel") carries the chrome; this draws glass cards on it, Geist words, Geist Mono marks,

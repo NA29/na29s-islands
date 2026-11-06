@@ -1,4 +1,4 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Modified for NA29 Islands by NA29: interface and behavior.
 // Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal settings panel (Cmd+, · Ctrl+A s · the sidebar's Settings button).
 // Everything personal in one place: look, wallpaper, sidebar, bars, terminal, sounds, keys.
@@ -603,7 +603,7 @@ export default class MySettings extends View {
           h_flex().gap(6)
             .child(this.button("cfg-open", "Open", "folder", () => exec("open", [appHome()])))
             .child(this.button("cfg-rice", "Edit rice.json", null, () => exec("open", ["-t", `${appHome()}/rice.json`])))),
-        this.row("Reset", "Back to the setup as it was saved in your dotfiles (look, bars, keys).",
+        this.row("Reset", "Back to the setup as saved in rice.json (look, bars, keys).",
           this.confirmReset
             ? h_flex().gap(6)
               .child(this.button("reset-no", "Cancel", null, () => { this.confirmReset = false; }))

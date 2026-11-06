@@ -1,4 +1,4 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Modified for NA29 Islands by NA29: interface and behavior.
 // Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // From herdr.dev/mods/herdrdev/tmux-prefix. Personal changes: pane moves (h/j/k/l, arrows)
 // close at once instead of waiting for a repeat; the prefix key (Ctrl+A by default) and the

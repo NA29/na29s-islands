@@ -4,19 +4,21 @@
   and mod foundations, and icons in cloned mods. `cloned_from` metadata is
   retained where present.
 - [tmux-prefix by herdrdev](https://herdr.dev/mods/herdrdev/tmux-prefix): the
-  starting point for the prefix overlay, with personal navigation and settings.
+  starting point for the prefix overlay, extended with navigation and settings.
 - [Rosé Pine](https://rosepinetheme.com): the palette used by `themes/rose-pine.json`.
 - [Geist](https://vercel.com/font): words in Geist, numbers and keycaps in Geist
   Mono. Herdr supplies the fonts; font files are not redistributed here.
 - JetBrains Mono: Herdr's default terminal font.
 
-Source snapshot: the personal dotfiles `stow-layout` branch, commit `3812250`.
-Publication changes: gradient defaults in the layout, rice settings and both
-Settings default maps; generic wallpaper folder; default notification sounds;
-one generic example substituted in a source comment. The original main layout
-is published as `layouts/na29-islands.json` (NA29 Islands); the settings writer
-and installation instructions use that name. The OpenCode integration
-is copied from the same dotfiles snapshot.
+- Theme palettes follow their original projects: [Catppuccin](https://catppuccin.com),
+  [Tokyo Night](https://github.com/folke/tokyonight.nvim), [Dracula](https://draculatheme.com),
+  [Gruvbox](https://github.com/morhetz/gruvbox), [Nord](https://www.nordtheme.com),
+  [Kanagawa](https://github.com/rebelot/kanagawa.nvim), [Everforest](https://github.com/sainnhe/everforest),
+  [Solarized](https://ethanschoonover.com/solarized/), [GitHub's Primer](https://primer.style)
+  and Rosé Pine. The theme files contain color values only.
+
+The package ships a gradient background, a generic wallpaper folder and Herdr's
+default notification sounds.
 
 ## Licenses
 
@@ -24,7 +26,7 @@ The original customization is licensed under **Apache-2.0**, copyright 2026 NA29
 see [LICENSE](LICENSE) and [NOTICE](NOTICE). This matches the licenses of
 [Herdr](https://github.com/herdrdev/herdr-app/blob/master/LICENSE) and
 [its layout examples](https://github.com/herdrdev/herdr-layout-examples/blob/main/LICENSE).
-The personal mod entry points carry modification notices, and layout files retain
+The modified mod entry points carry modification notices, and layout files retain
 their `cloned_from` metadata. Existing upstream rights and notices are preserved.
 
 Included SVG icons from Lucide/Feather retain their ISC/MIT terms; their complete

@@ -1,4 +1,4 @@
-// Modified for Herdr Rice by NA29: personal interface and behavior.
+// Modified for NA29 Islands by NA29: interface and behavior.
 // Licensed under Apache-2.0; see LICENSE, NOTICE and THIRD_PARTY.md.
 // Personal key actions that need more than one app command.
 //   new-space   ask for the name first, then make the space (on the focused space's machine)
@@ -12,7 +12,7 @@
 //
 // It is also the settings writer. The my-settings panel (and Ctrl+A t) only change the shared
 // "rice" object; this copy notices and writes the files:
-//   rice.json             every personal setting (tracked in dotfiles; loaded at start)
+//   rice.json             every setting (loaded at start)
 //   layouts/na29-islands.json the look: background, transparency, gaps, corners, borders, accent,
 //                         terminal font/size/padding, pane headers
 //   keys.json             prefix key, Ctrl+H/J/K/L, Cmd+N, Cmd+,
@@ -192,7 +192,7 @@ export default class MyKeys extends View {
         }
       }
     });
-    // rice.json is the truth at start (a fresh Mac gets it from dotfiles); shared state
+    // rice.json is the truth at start; shared state
     // carries changes live after that.
     cx.spawn(async (cx) => {
       try {

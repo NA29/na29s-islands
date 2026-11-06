@@ -23,7 +23,7 @@ function tabLabel(tab, ps, homeDir) {
   if (!lead) return tab.name;
   const base = (dir) => !dir ? "" : dir === homeDir ? "~" : dir.split("/").filter(Boolean).pop() ?? dir;
   // An agent, or any program with a telling title (an agent that doesn't report status
-  // still titles its terminal: "◐ Herdr config migration", "OC | Fix login").
+  // still titles its terminal: "◐ Refactor login form", "OC | Fix login").
   if (!lead.program?.shell) {
     const raw = (lead.title ?? "").replace(/^[^\p{L}\p{N}]+/u, "").replace(/^(OC|CC|Codex)\s*[|:·-]\s*/i, "").trim();
     const low = raw.toLowerCase();
