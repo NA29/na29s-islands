@@ -14,7 +14,7 @@ the author; it is **not** distributed here (see [ASSETS.md](ASSETS.md)).
 | File | What is visible |
 | --- | --- |
 | `hero.png`, root `preview.png` | Full window, transparency on, no overlay |
-| `transparency-on.png` / `transparency-off.png` | The same frame with see-through on and off |
+| `transparency-on.png` / `transparency-off.png` | The same scene with see-through on (wallpaper) and off (Abyss solid, `#08070c`) |
 | `workspaces.png` | Full sidebar: numbered workspaces, demo agents, activity and usage cards |
 | `goto.png` | Go to in NORMAL mode, full picker |
 | `goto-insert.png` | Go to in INSERT mode, filtered by `/fore` |
@@ -22,7 +22,7 @@ the author; it is **not** distributed here (see [ASSETS.md](ASSETS.md)).
 | `wallpaper.png` | Settings → Wallpaper: folder, Dim slider, Fill/Fit |
 | `settings.png` | Settings → Appearance: transparency, colour, theme and shape controls |
 | `prefix.png` | Ctrl+A prefix menu |
-| `status.png`, `now-playing.png`, `wispr.png`, `usage.png` | Status-bar and usage crops from an earlier frame |
+| `status.png`, `now-playing.png`, `wispr.png`, `usage.png` | Status-bar pieces and the usage card, cropped from the hero scene |
 
 Values in the images (opacity, dim, gap) reflect the live setup at capture
 time; the installable defaults come from the clean config snapshot.

@@ -21,9 +21,9 @@ and type as the sidebar.
 
 ### Wallpaper, dimming, and three transparency layers
 
-| See-through on | See-through off |
+| See-through on | See-through off (darkest solid background) |
 | --- | --- |
-| ![Transparency on: the wallpaper shows through the islands, cards and panes](docs/transparency-on.png) | ![Transparency off: solid islands and panes over the same wallpaper](docs/transparency-off.png) |
+| ![Transparency on: the wallpaper shows through the islands, cards and panes](docs/transparency-on.png) | ![Transparency off: solid islands and panes on the Abyss solid background](docs/transparency-off.png) |
 
 ![Wallpaper page: folder, dim slider and fill/fit](docs/wallpaper.png)
 
