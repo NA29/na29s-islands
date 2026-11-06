@@ -40,6 +40,15 @@ Cmd+, opens controls for appearance, wallpaper, the sidebar, bars, terminals,
 sounds, and keys. Changes are saved through one settings writer, so the UI and
 `rice.json` stay in sync.
 
+### Themes
+
+Rosé Pine is the default, and 14 popular dark themes ship alongside it: Rosé Pine
+Moon, Catppuccin (Mocha, Macchiato, Frappé), Tokyo Night and Tokyo Night Storm,
+Dracula, Gruvbox Dark, Nord, Kanagawa, Everforest Dark, Solarized Dark, GitHub
+Dark, and One Dark. Pick one in **Settings → Appearance → Theme**: terminals,
+islands, panes, cards and menus all follow it, and the accent switches to the
+theme's own. The accent row offers that theme's colors if you want a different one.
+
 ### Go to, with vim modes
 
 | NORMAL | INSERT (`/fore`) |
