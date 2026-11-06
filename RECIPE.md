@@ -3,8 +3,8 @@
 A macOS terminal and coding-agent desktop with a numbered workspace sidebar,
 separate rounded islands for tabs, panes and status, a vim-style Go to menu,
 and an expandable prompt/reply activity log. Appearance, keys and integrations
-are controlled from one personal Settings panel. The preview is a real crop
-of the prefix menu; a clean full-layout preview is pending.
+are controlled from one personal Settings panel. The preview is a real frame
+over a user-supplied wallpaper (not included; the default is a gradient).
 
 ![NA29 Islands](preview.png)
 
@@ -163,8 +163,7 @@ ship here; choose your own artwork and use Herdr's default sounds.
 - Shared run history and cache JSONL contain private text. Never publish them.
   Check existing overlays before screenshot automation; only close ones you own.
 - The screenshot values reflect a live customization; package defaults are the
-  documented snapshot. A full hero, full sidebar, INSERT picker and expanded
-  sample activity still need privacy-safe retakes.
+  documented snapshot.
 
 ## Done when
 

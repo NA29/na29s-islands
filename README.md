@@ -4,24 +4,26 @@ Rosé Pine islands for terminals and coding agents. A quieter desktop with
 numbered workspaces, vim-style navigation, a searchable activity log, and a
 status bar that keeps the useful details close.
 
-![NA29 Islands prefix menu](docs/hero.png)
+![NA29 Islands: numbered workspaces, agents, activity and usage in the sidebar; fastfetch, cbonsai and btop in see-through panes](docs/hero.png)
 
-*Privacy-safe preview: the actual Ctrl+A menu. A full-window hero is pending a
-clean demo capture; see [screenshot retakes](docs/SCREENSHOTS.md).*
+*Wallpaper in the screenshots: Hatsune Miku fan art, not included in this repo.
+Bring your own (see [wallpapers](docs/ASSETS.md)); the default is a gradient.*
 
 ## A tour
 
 ### Islands layout
 
-![Island opacity controls](docs/transparency.png)
-
 `na29-islands` separates the sidebar, tabs, terminal panes, and status bar into
-rounded islands, with 5px gaps and 10px corners. The screenshot shows their
-controls; a full layout view is on the retake list.
+rounded islands, with 5px gaps and 10px corners, floating over your wallpaper
+(see the screenshot above).
 
 ### Wallpaper, dimming, and three transparency layers
 
-![Three independent transparency controls](docs/transparency.png)
+| See-through on | See-through off |
+| --- | --- |
+| ![Transparency on: the wallpaper shows through the islands, cards and panes](docs/transparency-on.png) | ![Transparency off: solid islands and panes over the same wallpaper](docs/transparency-off.png) |
+
+![Wallpaper page: folder, dim slider and fill/fit](docs/wallpaper.png)
 
 Pick your own wallpaper, a gradient, or a solid color, then dim the background
 independently of the interface. Islands, cards, and panes each have their own
@@ -30,7 +32,7 @@ ships a gradient and [no wallpaper artwork](docs/ASSETS.md).
 
 ### Settings panel
 
-![Personal Settings panel](docs/settings.png)
+![Settings → Appearance: see-through switch, island/card/pane opacity, accent, theme, corners and gaps](docs/settings.png)
 
 Cmd+, opens controls for appearance, wallpaper, the sidebar, bars, terminals,
 sounds, and keys. Changes are saved through one settings writer, so the UI and
@@ -38,12 +40,14 @@ sounds, and keys. Changes are saved through one settings writer, so the UI and
 
 ### Go to, with vim modes
 
-![Go to NORMAL mode and search field](docs/goto.png)
+| NORMAL | INSERT (`/fore`) |
+| --- | --- |
+| ![Go to in NORMAL mode: agents that need you, spaces with their tabs, actions](docs/goto.png) | ![Go to in INSERT mode, filtered to matching tabs](docs/goto-insert.png) |
 
 Cmd+P brings spaces, tabs, agents, and actions into one picker: `j/k` moves,
 `l` or Enter opens, and `/` enters search/INSERT mode. Use `h` for the parent
 space, `gg/G` for the ends, and Ctrl+D/U for half-page movement; Escape closes
-the picker. Only its mode header is shown here to keep real workspace names private.
+the picker.
 
 ### Ctrl+A prefix menu
 
@@ -55,21 +59,22 @@ Shift+J/K can repeat space navigation within the configured repeat window.
 
 ### Numbered workspaces
 
-![Workspace number detail](docs/workspaces.png)
+<img src="docs/workspaces.png" alt="Sidebar: numbered workspaces with their agents, the activity card and usage limits" width="300" align="right">
 
 Zero-padded numbers sit beside semibold workspace headings, with agent rows
 underneath and color reserved for location and status. Ctrl+1–9 selects a
-workspace; a narrow sidebar becomes a compact rail. The number-only crop
-protects real workspace names; a complete sidebar capture is pending.
+workspace; a narrow sidebar becomes a compact rail. Below them, the activity
+card lists the latest runs and the usage card shows your agent limits.
+
+<br clear="right">
 
 ### Activity log: prompts and replies
 
-![Activity summary and status filters](docs/activity.png)
+![Activity log with a run expanded to show the prompt and the agent's reply](docs/activity.png)
 
 Ctrl+A then `a` opens one entry per run, with time, status filters, search, and
 expandable prompts/replies supplied by the optional hooks below. `j/k` moves,
-Enter expands, `l` opens the tab, and `y` copies the prompt. The screenshot is
-cropped above real runs; an expanded sample conversation needs a retake.
+Enter expands, `l` opens the tab, and `y` copies the prompt.
 
 ### CPU, memory, and battery
 
@@ -330,5 +335,4 @@ folder structure; its directory normally picks up tagged public repositories
 within an hour. No separate signup is required; community pictures are screened
 before appearing, according to the [gallery's sharing instructions](https://herdr.dev/gallery/#share).
 On GitHub, open the repository's **About → gear icon → Topics**, add `herdr-layout`,
-and save. Replace the temporary control preview with the clean full-layout
-shot before requesting a listing. No GitHub repository is created by this project.
+and save. No GitHub repository is created by this project.
